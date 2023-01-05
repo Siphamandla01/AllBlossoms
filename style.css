@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+.header {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(11, 11, 11, 0.7), rgba(0, 0, 0, 0.8)),
+		url(./images/back6.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.navbar {
+	transition: 0.5s;
+}
+.navbar-scrolled {
+	background-color: black;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.nav-link {
+	transition: all 0.2s;
+}
+.nav-link:hover {
+	transform: scale(1.05);
+	background-color: rgba(165, 42, 42, 0.273);
+	border-radius: 10%;
+}
+
+.navbar-nav a,
+#headerText {
+	color: brown !important;
+}
+#headerText {
+	font-family: "Oswald", sans-serif;
+	font-size: 20px;
+	transition: all 0.2s;
+}
+#headerText:hover {
+	transform: scale(1.05);
+}
+
+.categories {
+	background-color: rgba(165, 42, 42, 0.404);
+}
+.card {
+	transition: all 0.4s;
+	background-color: rgba(165, 42, 42, 0);
+	border-radius: 5%;
+}
+.card:hover {
+	transform: scale(1.07);
+}
+
+#logo {
+	padding-top: 10vh;
+}
+#about {
+	/* padding-top: 1vh;
+	margin: 2em; */
+	font-family: "Roboto", sans-serif;
+	color: rgba(0, 0, 0, 0.712);
+}
+#categoryCards {
+	width: 18rem;
+	border-radius: 5%;
+	align-items: center;
+	font-weight: 700;
+}
+#categories {
+	color: rgba(0, 0, 0, 0.712);
+}
