@@ -19,7 +19,7 @@ body {
 	transition: 0.5s;
 }
 .navbar-scrolled {
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.784);
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 .nav-link {
@@ -52,13 +52,25 @@ body {
 .categories {
 	background-color: rgba(165, 42, 42, 0.404);
 }
+.cards {
+	transition: all 0.4s;
+}
+.cards:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+.cards img {
+	border-radius: 5%;
+}
 .card {
 	transition: all 0.4s;
-	background-color: rgba(165, 42, 42, 0);
-	border-radius: 5%;
 }
 .card:hover {
 	transform: scale(1.07);
+	cursor: pointer;
+}
+.card img {
+	border-radius: 5%;
 }
 
 #logo {
@@ -104,4 +116,13 @@ ul li a {
 	font-size: 30px;
 	margin: 0 10px 0 50px;
 	transition: all 0.2s ease-in-out;
+}
+
+/* -----------------MIXED BUNCHES SECTION -------------------*/
+.mixedBunches {
+	padding: 50px;
+	color: #a52a2a;
+}
+.card {
+	background-color: #ffffff;
 }

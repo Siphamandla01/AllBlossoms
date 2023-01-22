@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="./script.js" defer></script>
+		<script src="../script.js" defer></script>
 		<link
 			rel="icon"
 			type="image/x-icon"
@@ -36,9 +36,9 @@
 		<title>All Events Blossoms</title>
 	</head>
 	<body>
-		<section class="header">
+		<div class="container-fluid header" data-aos="fade-down">
 			<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-				<div class="container-fluid ps-5">
+				<div class="container">
 					<a class="navbar-brand" href="#" id="headerText">
 						AllEvents Blossoms
 					</a>
@@ -53,35 +53,32 @@
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse pe-5" id="navbarNavAltMarkup">
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 						<div class="navbar-nav ms-auto">
 							<!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
 							<a class="nav-link" href="#about">About</a>
 							<a class="nav-link" href="#categories">Categories</a>
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="#contact">Contact</a>
 						</div>
 					</div>
 				</div>
 			</nav>
-			<div
-				class="text-center"
-				id="logo"
-				data-aos="fade-in"
-				data-aos-duration="1000"
-			>
-				<img
-					src="./images/AllEvents_blossom-removebg-preview.png"
-					alt=""
-					class="img-fluid"
-				/>
+			<div class="d-flex align-items-center justify-content-center vh-100">
+				<div class="">
+					<img
+						src="./images/AllEvents_blossom-removebg-preview.png"
+						alt=""
+						class="img-fluid"
+					/>
+				</div>
 			</div>
-		</section>
-
+		</div>
+		<div></div>
 		<div
-			class="container my-1 p-5"
+			class="container p-5"
 			id="about"
-			data-aos="fade-right"
-			data-aos-duration="1000"
+			data-aos="zoom-in"
+			data-aos-duration="2000"
 		>
 			<h2 class="text-center">About Us</h2>
 			<p class="text-center">Thank you for visiting our website</p>
@@ -92,134 +89,88 @@
 				determined to become the most reliable and best florist company around.
 			</p>
 			<p>
-				We currently only deliver to specific surburbs within Johannesburg. Same
-				day deliveries need to be ordered before 11am.Orders will not be
+				At the moment we only deliver to specific surburbs within Johannesburg.
+				Same day deliveries need to be ordered before 11am.Orders will not be
 				dispatched before full payement is made. Please note, some flowers are
 				seasonal and therefore an alternative will be provided.
+			</p>
+			<p>
+				We are situated less than 5km from the city deep flower market,
+				therefore making it easy for us to acquire the freshest flowers
+				everyday.
 			</p>
 			<p class="text-center">Your support is greatly appreciated</p>
 		</div>
 
-		<section class="categories" id="categories">
-			<div class="container p-5">
-				<h2 class="text-center">Our Categories</h2>
-				<div
-					class="row g-5 text-center"
-					data-aos="fade-left"
-					data-aos-duration="3000"
-				>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/mixedBunches.jpeg"
-									alt="Mixed Bunches category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Mixed Bunches</p>
-						</div>
+		<div class="container-fluid categories p-5" id="categories">
+			<h2 class="text-center pb-4">Our Categories</h2>
+			<div
+				class="row g-5 text-center"
+				data-aos="fade-right"
+				data-aos-duration="2000"
+			>
+				<div class="col" id="categoryCards">
+					<div class="cards shadow-sm p-3 mb-5 bg-transparent rounded">
+						<a href="./categories/mixedBunches.html"
+							><img
+								src="./images/mixedBunches.jpeg"
+								alt="Mixed Bunches category"
+								width="210px"
+								height="210px"
+							/>
+						</a>
+						<p class="card-text text-center">Mixed Bunches</p>
 					</div>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/hatboxes.jpeg"
-									alt="Glamorous Hat Boxes category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Glamorous Hat Boxes</p>
-						</div>
+				</div>
+
+				<div class="col" id="categoryCards">
+					<div class="cards shadow-sm p-3 mb-5 bg-transparent rounded">
+						<a href="./categories/vasesAndBaskets.html"
+							><img
+								src="./images/baskets.jpeg"
+								alt="Vases & Baskets category"
+								width="210px"
+								height="210px"
+							/>
+						</a>
+						<p class="card-text text-center">Vases & Baskets</p>
 					</div>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/baskets.jpeg"
-									alt="Vases & Baskets category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Vases & Baskets</p>
-						</div>
+				</div>
+				<div class="col" id="categoryCards">
+					<div class="cards shadow-sm p-3 mb-5 bg-transparent rounded">
+						<a href="./categories/gifting.html"
+							><img
+								src="./images/gifting.jpeg"
+								alt="Gifting category"
+								width="210px"
+								height="210px"
+							/>
+						</a>
+						<p class="card-text text-center">Gifting</p>
 					</div>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/gifting.jpeg"
-									alt="Gifting category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Gifting</p>
-						</div>
-					</div>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/reds.jpeg"
-									alt="Romantic Reds category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Romantic Reds</p>
-						</div>
-					</div>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/events.jpeg"
-									alt="Weddings & Events category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Weddings & Events</p>
-						</div>
-					</div>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/Addon.jpeg"
-									alt="Add Ons category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Add Ons</p>
-						</div>
-					</div>
-					<div class="col" id="categoryCards">
-						<div class="card">
-							<a href="./flowers.html"
-								><img
-									src="./images/funerals.jpeg"
-									alt="Funeral category"
-									width="190px"
-									height="190px"
-								/>
-							</a>
-							<p class="card-text text-center">Funeral</p>
-						</div>
+				</div>
+				<div class="col" id="categoryCards">
+					<div class="cards shadow-sm p-3 mb-5 bg-transparent rounded">
+						<a href="./categories/weddingsAndEvents.html"
+							><img
+								src="./images/events.jpeg"
+								alt="Weddings & Events category"
+								width="210px"
+								height="210px"
+							/>
+						</a>
+						<p class="card-text text-center">Weddings & Events</p>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
 		<div
 			class="container contactContainer"
+			id="contact"
 			data-aos="fade-up"
-			data-aos-duration="3000"
+			data-aos-duration="1000"
+			data-aos-delay="500"
 		>
 			<h2 class="contactHeader text-center p-4 m-4">Contact Us</h2>
 			<h6 class="text-center">We'd love to help!</h6>
@@ -302,7 +253,6 @@
 				</div>
 			</form>
 		</div>
-
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();
